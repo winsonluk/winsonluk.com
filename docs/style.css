@@ -408,9 +408,14 @@ footer .social a:hover{
         display: none;
     }
     header nav{
-        float: center;
+        float: right;
+        position: relative;
+        right: 50%; /* or right 50% */
+        text-align: left;
     }
     header nav ul li a{
-        padding: 20px;
+        position: relative;
+        left: 150%;
+        padding: 10px;
     }
 }
