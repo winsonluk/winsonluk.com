@@ -149,16 +149,13 @@ header nav ul li{
 }
 header nav ul li a{
     display: inline-block;
-    padding: 15px 20px;
+    padding: 15px 40px;
     color: #fff;
     transition: 200ms;
 }
 header nav ul li a:hover, header nav ul li a.active{
     text-decoration: none;
     background: rgba(255,255,255,0.1);
-}
-header .toggle-menu{
-    display: none;
 }
 
 .splash{
@@ -171,17 +168,17 @@ header .toggle-menu{
     content: "";
     display: block;
     position: absolute;
-    top: -200px; right: -200px; bottom: -200px; left: -200px;
+    top: -150px; right: -150px; bottom: -150px; left: -150px;
     background: rgba(255,255,255,.95);
-    animation: spin 10s infinite linear;
+    animation: spin 5s infinite linear;
 }
 .splash:before{
     content: "";
     display: block;
     position: absolute;
-    top: -200px; right: -200px; bottom: -200px; left: -200px;
+    top: -150px; right: -150px; bottom: -150px; left: -150px;
     background: rgba(255,255,255,.95);
-    animation: spin2 10s infinite linear;
+    animation: spin2 5s infinite linear;
 }
 .splash .container{
     position: relative;
@@ -321,11 +318,6 @@ footer .social{
     float: right;
     padding: 15px 0;
 }
-footer .social a{
-    margin-left: 10px;
-    font-size: 20px;
-    color: #ccc;
-}
 footer .social a:hover{
     color: #fff;
 }
@@ -359,9 +351,6 @@ footer .social a:hover{
     .feature > div > div{
         width: 60%;
     }
-    header nav ul li a{
-        padding: 15px;
-    }
 }
 
 @media (max-width: 600px){
@@ -390,40 +379,8 @@ footer .social a:hover{
         width: 100%;
         float: none;
     }
-    header .logo{
-      float: right;
-    }
-    header nav{
-        float: none;
-        position: fixed;
-        top: 56px;
-        left: -300px;
-        bottom: 0;
-        width: 100%;
-        max-width: 300px;
-        background: #222;
-        transition: 200ms;
-    }
-    header nav.visible{
-        left: 0px;
-    }
-    header nav ul li{
-        display: block;
-        float: none;
-        width: 100%;
-    }
     header nav ul li a{
-        display: block;
-        width: 100%;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    header .toggle-menu{
-        display: block;
-        color: #fff;
-        position: absolute;
-        left: 10px;
-        top: 13px;
-        font-size: 28px;
+        padding: 15px;
     }
     footer{
         text-align: center;

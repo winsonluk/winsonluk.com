@@ -15,8 +15,4 @@ $(document).ready(function(){
         $('html,body').stop().animate({scrollTop: $('.'+$(this).data('scrollto')).offset().top-65 }, 700, 'easeInOutExpo', function(){});
     });
 
-    $('.toggle-menu').click(function(){
-        $('nav').toggleClass('visible');
-    });
-
 });
