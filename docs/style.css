@@ -208,6 +208,17 @@ header nav ul li a:hover, header nav ul li a.active{
     margin-bottom: 20px;
     padding-top: 25px;
 }
+.overview .container img{
+  height: 100px;
+  width: auto;
+}
+.overview .container a{
+    color: #000;
+    text-decoration: none;
+}
+.overview .container a:hover{
+    text-decoration: underline;
+}
 .overview p{
     margin-bottom: 0;
 }
@@ -390,5 +401,16 @@ footer .social a:hover{
     }
     footer .social{
         padding-top: 0;
+    }
+  }
+@media (max-width: 400px){
+    header .logo{
+        display: none;
+    }
+    header nav{
+        float: center;
+    }
+    header nav ul li a{
+        padding: 20px;
     }
 }
