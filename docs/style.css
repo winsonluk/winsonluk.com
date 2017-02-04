@@ -173,7 +173,7 @@ header .toggle-menu{
     position: absolute;
     top: -200px; right: -200px; bottom: -200px; left: -200px;
     background: rgba(255,255,255,.95);
-    animation: spin 20s infinite linear;
+    animation: spin 10s infinite linear;
 }
 .splash:before{
     content: "";
@@ -181,12 +181,12 @@ header .toggle-menu{
     position: absolute;
     top: -200px; right: -200px; bottom: -200px; left: -200px;
     background: rgba(255,255,255,.95);
-    animation: spin2 20s infinite linear;
+    animation: spin2 10s infinite linear;
 }
 .splash .container{
     position: relative;
-    top: 48%;
-    transform: translateY(-50%);
+    top: 50%;
+    transform: translate(10%, -50%);
     z-index: 5;
 }
 .splash h2{
