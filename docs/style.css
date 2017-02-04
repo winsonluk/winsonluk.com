@@ -178,7 +178,7 @@ header .toggle-menu{
     top: -40px; right: -40px; bottom: -40px; left: -40px;
     background: rgba(255,255,255,0.08);
     transform: rotate(30deg);
-    animation: spin 60s infinite linear;
+    animation: spin 10s infinite linear;
 }
 .splash:before{
     content: "";
@@ -187,7 +187,7 @@ header .toggle-menu{
     top: -40px; right: -40px; bottom: -40px; left: -40px;
     background: rgba(255,255,255,0.08);
     transform: rotate(150deg);
-    animation: spin2 50s infinite linear;
+    animation: spin2 10s infinite linear;
 }
 .splash .container{
     position: relative;
