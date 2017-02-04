@@ -106,8 +106,8 @@ section{
     background: rgba(255,255,255,0.1);
 }
 .btn.yellow{
-    color: #ccc;
-    border: 1px solid #ccc;
+    color: #555;
+    border: 1px solid #555;
 }
 .btn.smaller{
     padding: 10px 25px;
@@ -308,122 +308,6 @@ header .toggle-menu{
     margin-bottom: 40px;
 }
 
-.contact{
-    background: #ccc;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-}
-.contact:after{
-    content: "";
-    display: block;
-    position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.1);
-    transform: rotate(30deg);
-}
-.contact .input{
-    width: 47%;
-    float: left;
-}
-.contact .input:nth-of-type(odd){
-    margin-right: 6%;
-}
-.contact .message{
-    display: block;
-    clear: both;
-    float: none;
-    padding-top: 10px;
-}
-.contact .input input{
-    display: block;
-    width: 100%;
-    background: rgba(255,255,255,0.3);
-    border: 0;
-    padding: 10px 15px;
-}
-.contact .message textarea{
-    display: block;
-    width: 100%;
-    height: 200px;
-    background: rgba(255,255,255,0.3);
-    border: 0;
-    padding: 10px 15px;
-    resize: vertical;
-}
-.contact label{
-    position: relative;
-    z-index: 10;
-}
-.contact label span{
-    display: block;
-    text-align: left;
-    font-size: 14px;
-}
-.contact label span .fa{
-    margin-right: 7px;
-}
-.contact .submit{
-    display: block;
-    text-align: center;
-    padding-top: 40px;
-}
-.contact h2{
-    margin-bottom: 40px;
-}
-
-.pricing{
-    text-align: center;
-}
-.pricing > div > div{
-    float: left;
-    width: 33%;
-    margin-top: 60px;
-    background: #f6f6f6;
-    padding: 40px;
-}
-.pricing > div > div h3{
-    background: #555;
-    color: #fff;
-    display: block;
-    margin: -40px -40px 35px -40px;
-    padding: 30px;
-    position: relative;
-}
-.pricing > div > div h3 span{
-    display: block;
-}
-.pricing > div > div h3 span .fa{
-    margin: 0 1px;
-}
-.pricing > div > div .price{
-    font-size: 40px;
-}
-.pricing > div > div:nth-of-type(2){
-    width: calc(34% + 20px);
-    margin: 40px -10px 0 -10px;
-    box-shadow: 0px 5px 20px -5px rgba(0,0,0,0.3);
-    position: relative;
-    z-index: 50;
-}
-.pricing > div > div:nth-of-type(2) h3{
-    background: #ccc;
-    color: #555;
-    display: block;
-}
-.pricing ul{
-    padding: 0;
-    margin: 27px 0;
-}
-.pricing ul li{
-    display: block;
-    line-height: 40px;
-    border-bottom: 1px solid #eee;
-}
-.pricing ul li:last-child{
-    border-bottom: 0;
-}
-
 footer{
     background: #222;
     color: #ccc;
@@ -484,19 +368,6 @@ footer .social a:hover{
     header nav ul li a{
         padding: 15px;
     }
-    .pricing > div > div{
-        width: 100% !important;
-        float: none;
-        margin: 0 0 20px 0 !important;
-        box-shadow: none !important;
-    }
-    .pricing > div > div h3{
-        background: #555 !important;
-        color: #fff !important;
-    }
-    .pricing h2{
-        margin-bottom: 40px;
-    }
 }
 
 @media (max-width: 600px){
@@ -533,7 +404,7 @@ footer .social a:hover{
         bottom: 0;
         width: 100%;
         max-width: 300px;
-        background: #333;
+        background: #222;
         transition: 200ms;
     }
     header nav.visible{
@@ -564,21 +435,6 @@ footer .social a:hover{
         float: none;
     }
     footer .social{
-        padding-top: 0;
-    }
-
-    .contact .input{
-        display: block;
-        width: 100%;
-        float: none;
-    }
-    .contact .input:nth-of-type(odd){
-        margin-right: 0;
-    }
-    .contact label{
-        padding-top: 10px;
-    }
-    .contact label:first-of-type{
         padding-top: 0;
     }
 }

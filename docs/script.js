@@ -19,8 +19,4 @@ $(document).ready(function(){
         $('nav').toggleClass('visible');
     });
 
-    if($(window).width() < 800){
-        $('.pricing > div > div:nth-of-type(3)').insertAfter($('.pricing > div > div:nth-of-type(1)'));
-    }
-
 });
