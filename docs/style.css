@@ -106,8 +106,8 @@ section{
     background: rgba(255,255,255,0.1);
 }
 .btn.yellow{
-    color: #fbc93d;
-    border: 1px solid #fbc93d;
+    color: #ccc;
+    border: 1px solid #ccc;
 }
 .btn.smaller{
     padding: 10px 25px;
@@ -128,7 +128,7 @@ header .logo{
     float: left;
     font-family: 'Open Sans', sans-serif;
     padding: 13px 0;
-    color: #fbc93d;
+    color: #ccc;
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
@@ -166,7 +166,7 @@ header .toggle-menu{
 }
 
 .splash{
-    background: #fbc93d;
+    background: #ccc;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -259,7 +259,7 @@ header .toggle-menu{
 }
 .feature ul li:last-child{
     margin-bottom: 0;
-    padding-bottom: 0;  
+    padding-bottom: 0;
     border-bottom: 0;
 }
 .feature ul li h3{
@@ -271,7 +271,7 @@ header .toggle-menu{
 .feature ul li .fa{
     float: left;
     font-size: 30px;
-    background: #fbc93d;
+    background: #ccc;
     color: #fff;
     width: 50px;
     height: 50px;
@@ -287,7 +287,7 @@ header .toggle-menu{
 }
 
 .cta{
-    background: #fbc93d;
+    background: #ccc;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -309,7 +309,7 @@ header .toggle-menu{
 }
 
 .contact{
-    background: #fbc93d;
+    background: #ccc;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -407,7 +407,7 @@ header .toggle-menu{
     z-index: 50;
 }
 .pricing > div > div:nth-of-type(2) h3{
-    background: #fbc93d;
+    background: #ccc;
     color: #555;
     display: block;
 }
