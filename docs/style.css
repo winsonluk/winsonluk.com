@@ -1,18 +1,14 @@
 /* Animations */
 
-@keyframes pulse {
-  0%   { transform: scale(1); }
-  50% { transform: scale(0.8); }
-  100% { transform: scale(1); }
-}
-
 @keyframes spin {
-  0%   { transform: rotate(30deg); }
-  100% { transform: rotate(210deg); }
+  0%   { transform: rotate(0deg) scale(.8, .8); }
+  50%  { transform: rotate(90deg) scale(1, 1); }
+  100% { transform: rotate(180deg) scale(.8, .8); }
 }
 @keyframes spin2 {
-  0%   { transform: rotate(150deg); }
-  100% { transform: rotate(330deg); }
+  0%   { transform: rotate(180deg) scale(1, 1); }
+  50%  { transform: rotate(90deg) scale(.8, .8); }
+  100% { transform: rotate(0deg) scale(1, 1); }
 }
 
 /* End Animations */
@@ -175,19 +171,17 @@ header .toggle-menu{
     content: "";
     display: block;
     position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.08);
-    transform: rotate(30deg);
-    animation: spin 10s infinite linear;
+    top: -200px; right: -200px; bottom: -200px; left: -200px;
+    background: rgba(255,255,255,.95);
+    animation: spin 20s infinite linear;
 }
 .splash:before{
     content: "";
     display: block;
     position: absolute;
-    top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.08);
-    transform: rotate(150deg);
-    animation: spin2 10s infinite linear;
+    top: -200px; right: -200px; bottom: -200px; left: -200px;
+    background: rgba(255,255,255,.95);
+    animation: spin2 20s infinite linear;
 }
 .splash .container{
     position: relative;
@@ -396,6 +390,9 @@ footer .social a:hover{
         width: 100%;
         float: none;
     }
+    header .logo{
+      float: right;
+    }
     header nav{
         float: none;
         position: fixed;
@@ -424,7 +421,7 @@ footer .social a:hover{
         display: block;
         color: #fff;
         position: absolute;
-        right: 10px;
+        left: 10px;
         top: 13px;
         font-size: 28px;
     }
