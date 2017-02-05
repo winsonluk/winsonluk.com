@@ -55,6 +55,7 @@ h3{
 a{
     color: #999;
     text-decoration: none;
+    outline: 0;
 }
 a:hover{
     text-decoration: underline;
@@ -152,10 +153,6 @@ header nav ul li a{
     padding: 15px 40px;
     color: #fff;
     transition: 200ms;
-}
-header nav ul li a:hover, header nav ul li a.active{
-    text-decoration: none;
-    background: rgba(255,255,255,0.1);
 }
 
 .splash{
@@ -402,7 +399,13 @@ footer .social a:hover{
     footer .social{
         padding-top: 0;
     }
-  }
+}
+@media (min-width: 400px){
+    header nav ul li a:hover, header nav ul li a.active{
+        text-decoration: none;
+        background: rgba(255,255,255,0.1);
+    }
+}
 @media (max-width: 400px){
     header .logo{
         display: none;
