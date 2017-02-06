@@ -71,6 +71,24 @@ img{
 
 /* End Resets, Clears & Defaults */
 
+.blog{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.blog section{
+    padding: 30px 10px;
+}
+
+.blog img{
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0 50px 0;
+}
+
 .container{
     width: 100%;
     max-width: 1000px;
@@ -329,6 +347,9 @@ footer .social a:hover{
     section{
         padding: 80px 10px;
     }
+    .blog section{
+        padding: 30px 10px;
+    }
     header, footer{
         padding: 0 10px;
     }
@@ -359,6 +380,9 @@ footer .social a:hover{
 @media (max-width: 700px){
     section{
         padding: 40px 10px;
+    }
+    .blog section{
+        padding: 60px 10px;
     }
     .splash{
         padding: 100px 10px 40px 10px;
@@ -414,6 +438,12 @@ footer .social a:hover{
     header nav ul li a{
         left: 50%;
         padding: 5px 15px;
+    }
+    .blog {
+        width: 90%;
+    }
+    .blog section{
+        padding: 30px 10px;
     }
     .float_center {
         float: right;

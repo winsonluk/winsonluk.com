@@ -9,7 +9,7 @@ jQuery.extend(jQuery.easing,{
 
 $(document).ready(function(){
 
-    $('a[href=#]').click(function(e){
+    $('a[href="#projects"], a[href="#hire"]').click(function(e){
         e.preventDefault();
         $('nav').removeClass('visible');
         $('html,body').stop().animate({scrollTop: $('.'+$(this).data('scrollto')).offset().top-65 }, 700, 'easeInOutExpo', function(){});
