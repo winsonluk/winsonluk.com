@@ -122,17 +122,15 @@ header .logo{
     float: left;
     font-family: 'Open Sans', sans-serif;
     padding: 13px 0;
-    color: #ccc;
+    color: #fff;
     font-weight: 400;
     font-size: 22px;
     line-height: 30px;
     margin: 0;
 }
-header .logo .fa{
-    font-size: 16px;
-    position: relative;
-    top: -1px;
-    margin-right: 7px;
+header .logo a{
+    color: #fff;
+    text-decoration: none;
 }
 header nav{
     float: right;
@@ -147,8 +145,8 @@ header nav ul li{
 }
 header nav ul li a{
     display: inline-block;
-    padding: 15px 40px;
-    color: #fff;
+    padding: 15px 30px;
+    color: #999;
     transition: 200ms;
 }
 
@@ -406,19 +404,25 @@ footer .social a:hover{
         text-decoration: underline;
     }
 }
-@media (max-width: 400px){
+@media (max-width: 500px){
     header .logo{
         display: none;
     }
     header nav{
-        float: right;
-        position: relative;
-        right: 50%; /* or right 50% */
-        text-align: left;
+        float: none;
     }
     header nav ul li a{
+        left: 50%;
+        padding: 5px 15px;
+    }
+    .float_center {
+        float: right;
         position: relative;
-        left: 150%;
-        padding: 10px;
+        left: -50%;
+        text-align: left;
+    }
+    .float_center > .child {
+        position: relative;
+        left: 50%;
     }
 }
