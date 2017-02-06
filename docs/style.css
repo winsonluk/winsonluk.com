@@ -441,10 +441,13 @@ footer .social a:hover{
         padding: 5px 15px;
     }
     .blog {
-        width: 90%;
+        width: 100%;
     }
     .blog section{
-        padding: 30px 10px;
+        padding: 30px 10;
+    }
+    .blog img{
+        width: 100%;
     }
     .float_center {
         float: right;
