@@ -231,6 +231,9 @@ header nav ul li a{
 .overview .container a:hover{
     text-decoration: underline;
 }
+.overview .container .fa:hover{
+    background: rgba(0,0,0,0.2);
+}
 .overview p{
     margin-bottom: 0;
 }
