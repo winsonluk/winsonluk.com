@@ -109,15 +109,15 @@ section{
     display: inline-block;
     padding: 15px 30px;
     border-radius: 50px;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #555;
+    border: 1px solid #555;
     transition: 200ms;
     background: transparent;
     cursor: pointer;
 }
 .btn:hover{
     text-decoration: none;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.5);
 }
 .btn.yellow{
     color: #555;
