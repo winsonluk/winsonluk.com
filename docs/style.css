@@ -182,7 +182,7 @@ header nav ul li a{
     position: absolute;
     top: -150px; right: -150px; bottom: -150px; left: -150px;
     background: rgba(255,255,255,.95);
-    animation: spin 5s infinite linear;
+    animation: spin 10s infinite linear;
 }
 .splash:before{
     content: "";
@@ -190,7 +190,7 @@ header nav ul li a{
     position: absolute;
     top: -150px; right: -150px; bottom: -150px; left: -150px;
     background: rgba(255,255,255,.95);
-    animation: spin2 5s infinite linear;
+    animation: spin2 10s infinite linear;
 }
 .splash .container{
     position: relative;
