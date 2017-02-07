@@ -402,6 +402,8 @@ footer .social a:hover{
         margin-bottom: 0;
     }
     .overview p{
+        padding: 0 100px 0 100px;
+        text-align: justify;
         overflow: hidden;
     }
     .feature img{
@@ -459,5 +461,8 @@ footer .social a:hover{
     .float_center > .child {
         position: relative;
         left: 50%;
+    }
+    .overview p{
+        padding: 0 10px 0 10px;
     }
 }
