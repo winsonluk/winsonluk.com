@@ -78,6 +78,7 @@ img{
 }
 
 .blog section{
+    text-align: justify;
     padding: 30px 10px;
 }
 
@@ -385,6 +386,9 @@ footer .social a:hover{
     .blog section{
         padding: 60px 10px;
     }
+    .blog img{
+        width: 100%;
+    }
     .splash{
         padding: 100px 10px 40px 10px;
     }
@@ -445,9 +449,6 @@ footer .social a:hover{
     }
     .blog section{
         padding: 30px 10;
-    }
-    .blog img{
-        width: 100%;
     }
     .float_center {
         float: right;
