@@ -323,6 +323,9 @@ header nav ul li a{
 }
 
 footer{
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: #222;
     color: #ccc;
     padding: 0 20px;
@@ -416,15 +419,6 @@ footer .social a:hover{
     header nav ul li a{
         padding: 15px;
     }
-    footer{
-        text-align: center;
-    }
-    footer .copyright, footer .social{
-        float: none;
-    }
-    footer .social{
-        padding-top: 0;
-    }
 }
 @media (min-width: 700px){
     header nav ul li a:hover, header nav ul li a.active{
@@ -464,5 +458,16 @@ footer .social a:hover{
     }
     .overview p{
         padding: 0 10px 0 10px;
+    }
+    footer{
+        text-align: center;
+    }
+    footer .copyright, footer .social{
+        float: none;
+        padding: 5px 0 0 0;
+    }
+    footer .social{
+        float: none;
+        padding: 0;
     }
 }
