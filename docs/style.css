@@ -78,7 +78,6 @@ img{
 }
 
 .blog section{
-    text-align: justify;
     padding: 30px 10px;
 }
 
@@ -472,5 +471,10 @@ footer .social a:hover{
     footer .social{
         float: none;
         padding: 0;
+    }
+}
+@media (max-width: 340px){
+    header nav ul li a{
+        padding: 5px 10px;
     }
 }
