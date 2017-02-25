@@ -86,7 +86,7 @@ img{
 }
 
 .blog img{
-    width: 80%;
+    width: 100%;
     display: block;
     height: auto;
     margin-left: auto;
@@ -416,9 +416,6 @@ footer .social a:hover{
     }
     .blog section{
         padding: 60px 10px;
-    }
-    .blog img{
-        width: 100%;
     }
     .splash{
         padding: 100px 10px 40px 10px;
