@@ -1,14 +1,18 @@
 /* Animations */
 
 @keyframes spin {
-  0%   { transform: rotate(0deg) scale(.8, .8); }
-  50%  { transform: rotate(90deg) scale(1, 1); }
-  100% { transform: rotate(180deg) scale(.8, .8); }
+  0%   { transform: rotate(0deg) scale(.6, .6); }
+  25%  { transform: rotate(90deg) scale(1.2, 1.2); }
+  50% { transform: rotate(180deg) scale(.6, .6); }
+  75%  { transform: rotate(270deg) scale(1.2, 1.2); }
+  100% { transform: rotate(360deg) scale(.6, .6); }
 }
 @keyframes spin2 {
-  0%   { transform: rotate(180deg) scale(1, 1); }
-  50%  { transform: rotate(90deg) scale(.8, .8); }
-  100% { transform: rotate(0deg) scale(1, 1); }
+  0%   { transform: rotate(180deg) scale(1.2, 1.2); }
+  25%  { transform: rotate(90deg) scale(.6, .6); }
+  50% { transform: rotate(0deg) scale(1.2, 1.2); }
+  75%  { transform: rotate(-90deg) scale(.6, .6); }
+  100% { transform: rotate(-180deg) scale(1.2, 1.2); }
 }
 
 /* End Animations */
@@ -170,7 +174,9 @@ header nav ul li a{
 }
 
 .splash{
-    background: #ccc;
+    background-image: url("images/plaid.png");
+    background-size: contain;
+    color: #000;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -179,23 +185,31 @@ header nav ul li a{
     content: "";
     display: block;
     position: absolute;
-    top: -150px; right: -150px; bottom: -150px; left: -150px;
-    background: rgba(255,255,255,.95);
-    animation: spin 10s infinite linear;
+    top: -500px; right: -500px; bottom: -500px; left: -500px;
+    background-image: url("images/plaid.png");
+    background-size: cover;
+    filter: alpha(Opacity=30);
+    opacity: 0.3;
+    animation: spin 60s infinite linear;
 }
 .splash:before{
     content: "";
     display: block;
     position: absolute;
-    top: -150px; right: -150px; bottom: -150px; left: -150px;
-    background: rgba(255,255,255,.95);
-    animation: spin2 10s infinite linear;
+    top: -500px; right: -500px; bottom: -500px; left: -500px;
+    background-image: url("images/plaid.png");
+    background-size: cover;
+    filter: alpha(Opacity=30);
+    opacity: 0.3;
+    animation: spin2 60s infinite linear;
 }
 .splash .container{
     position: relative;
     top: 50%;
     transform: translate(10%, -50%);
     z-index: 5;
+    border-left: 10px solid #000;
+    padding: 20px;
 }
 .splash h2{
     margin-bottom: 40px;
@@ -369,6 +383,7 @@ footer .social a:hover{
         position: relative;
         top: 0;
         transform: none;
+        border: 10px solid #000;
     }
     .overview > div > div{
         padding: 0 20px;
