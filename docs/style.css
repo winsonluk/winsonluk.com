@@ -120,7 +120,7 @@ section{
 }
 .btn:hover{
     text-decoration: none;
-    background: rgba(255,255,255,0.5);
+    background: rgba(0,0,0,0.3);
 }
 .btn.yellow{
     color: #555;
@@ -252,7 +252,7 @@ header nav ul li a{
 }
 
 .feature.greybg{
-    background: #f6f6f6;
+    background: #ddd;
 }
 .feature{
     position: relative;
@@ -318,6 +318,7 @@ header nav ul li a{
 
 .cta{
     background: #ccc;
+    background-image: url("images/plaid.png");
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -327,7 +328,7 @@ header nav ul li a{
     display: block;
     position: absolute;
     top: -40px; right: -40px; bottom: -40px; left: -40px;
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.5);
     transform: rotate(30deg);
 }
 .cta .container{
