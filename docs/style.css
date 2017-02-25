@@ -94,11 +94,16 @@ img{
     padding: 30px 0 50px 0;
 }
 
-.blog h2{
+.blog #toc h2{
     font-size: 20px;
 }
 
 .blog section #toc{
+    border-left: 5px solid #000;
+    padding: 20px;
+}
+
+.blog #post h2{
     border-left: 5px solid #000;
     padding: 20px;
 }
