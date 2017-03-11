@@ -537,6 +537,6 @@ footer .social a:hover{
         padding: 5px 10px;
     }
     .splash .container{
-        transform: translate(5%, 10%);
+        transform: translate(0%, 10%);
     }
 }
