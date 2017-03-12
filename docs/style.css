@@ -284,7 +284,7 @@ header nav ul li a{
     top: 100px;
     right: 55%;
 }
-.feature:nth-of-type(even) img{
+.feature:nth-of-type(odd) img{
     right: auto;
     left: 55%;
 }
@@ -295,7 +295,7 @@ header nav ul li a{
 .feature > div > div > p{
     margin-bottom: 40px;
 }
-.feature:nth-of-type(even) > div > div{
+.feature:nth-of-type(odd) > div > div{
     float: left;
 }
 .feature ul{
@@ -428,7 +428,7 @@ footer .social a:hover{
     .feature img{
         right: 65%;
     }
-    .feature:nth-of-type(even) img{
+    .feature:nth-of-type(odd) img{
         left: 65%;
     }
     .feature > div > div{
