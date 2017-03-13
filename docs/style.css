@@ -176,7 +176,8 @@ header nav ul li a{
 
 .splash{
     background-image: url("images/plaid.png");
-    background-size: contain;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
     color: #000;
     height: 100vh;
     overflow: hidden;
@@ -194,7 +195,8 @@ header nav ul li a{
 }
 .splash2{
     background-image: url("images/plaid.png");
-    background-size: contain;
+    background-size: auto 100%;
+    background-repeat: repeat-x;
     color: #fff;
     height: 100vh;
     overflow: hidden;
