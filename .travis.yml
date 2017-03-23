@@ -3,9 +3,7 @@ branches:
     - master
 
 before_script:
-  - npm install -g firebase-tools
-
-script: cd docs
+  - npm install -g firebase-tools && cd docs
 
 deploy:
   provider: firebase
