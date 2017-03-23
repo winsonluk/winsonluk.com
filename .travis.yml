@@ -5,5 +5,5 @@ before_deploy: cd docs && npm install -g firebase-tools
 deploy:
   provider: firebase
   token:
-    secure: "1/nJI_Jm3e1EAoM3mKq2DIbu5eAaEFaN4KoDDVeasVR6c}"
+    secure: "1/uoZsdlLIcLPHl-FQSnvjyBgh0DEFPeL2Q3o4fXtLPEjdNDhbCL9n93f7Z0Ww9TMM"
   project: "winsonluk-75a4f"
