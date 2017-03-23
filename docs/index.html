@@ -32,7 +32,7 @@
                         <li><a href="#about" data-scrollto="feature">About</a></li>
                         <li><a href="#projects" data-scrollto="overview">Projects</a></li>
                         <li><a href="#contact" data-scrollto="cta">Contact</a></li>
-                        <li><a href="http://www.winsonluk.com/blog" style="color:#fff;">Blog</a></li>
+                        <li><a href="https://www.winsonluk.com/blog" style="color:#fff;">Blog</a></li>
                     </ul>
                     </div>
                 </nav>
@@ -189,12 +189,24 @@
                     <p>Created by <a href="http://github.com/winsonluk/winsonluk.com" target="_blank">Winson Luk</a> © 2017</p>
                 </div>
                 <div class="social">
-                    <a href="http://www.winsonluk.com/privacy" target="_blank">Privacy</a>&nbsp | &nbsp<a href="http://www.winsonluk.com/terms" target="_blank">Terms</a>&nbsp | &nbsp<a href="http://www.winsonluk.com/contact">Contact</a>
+                    <a href="https://www.winsonluk.com/privacy" target="_blank">Privacy</a>&nbsp | &nbsp<a href="https://www.winsonluk.com/terms" target="_blank">Terms</a>&nbsp | &nbsp<a href="https://www.winsonluk.com/contact">Contact</a>
                 </div>
             </div>
         </footer>
 
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+				<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+				<script>
+					// Initialize Firebase
+					var config = {
+						apiKey: "AIzaSyCmV__h-l1yIcrr-dCIDmSG4TOZjBZ4H9c",
+						authDomain: "winsonluk-75a4f.firebaseapp.com",
+						databaseURL: "https://winsonluk-75a4f.firebaseio.com",
+						storageBucket: "winsonluk-75a4f.appspot.com",
+						messagingSenderId: "492443170791"
+					};
+					firebase.initializeApp(config);
+				</script>
+        <script src="jquery-1.11.3.min.js"></script>
         <script src="script.js"></script>
 
     </body>
