@@ -6,3 +6,4 @@ deploy:
   provider: firebase
   token:
     secure: "1/nJI_Jm3e1EAoM3mKq2DIbu5eAaEFaN4KoDDVeasVR6c}"
+  project: "winsonluk-75a4f"
