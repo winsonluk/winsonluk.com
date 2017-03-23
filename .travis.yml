@@ -1,3 +1,4 @@
+language: JAVASCRIPT
 branches:
   only:
     - master
