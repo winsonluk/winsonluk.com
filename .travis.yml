@@ -1,21 +1,12 @@
-#.travis.yml
-language: generic
-sudo: required
+language: node_js
+node_js:
+  - "0.10"
 branches:
   only:
     - master
-before_deploy:
+before_script:
   - cd docs
-  - cd functions
-  - rm -rf node_modules
-  - npm cache clear
-  - npm set registry https://registry.npmjs.org/
-  - npm install
   - npm install -g --save firebase-tools
-  - cd ..
 
-deploy:
-  provider: firebase
-  token:
-    secure: "1/uoZsdlLIcLPHl-FQSnvjyBgh0DEFPeL2Q3o4fXtLPEjdNDhbCL9n93f7Z0Ww9TMM"
-  project: "winsonluk-75a4f"
+after_success:
+  - firebase deploy --token "1/uoZsdlLIcLPHl-FQSnvjyBgh0DEFPeL2Q3o4fXtLPEjdNDhbCL9n93f7Z0Ww9TMM"
