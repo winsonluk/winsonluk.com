@@ -4,9 +4,7 @@ node_js:
 branches:
   only:
     - master
-before_script:
+script:
   - cd docs
   - npm install -g --save firebase-tools
-
-after_success:
   - firebase deploy --token "${1/uoZsdlLIcLPHl-FQSnvjyBgh0DEFPeL2Q3o4fXtLPEjdNDhbCL9n93f7Z0Ww9TMM}"
