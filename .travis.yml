@@ -1,6 +1,6 @@
 language: generic
 sudo: required
-before_deploy: cd docs/functions && npm install -g n && npm cache clean -f && npm install -g firebase-tools && npm install es6-promise --save
+before_deploy: cd docs && npm install -g n && npm cache clean -f && npm install -g firebase-tools && npm install es6-promise --save
 
 deploy:
   provider: firebase
