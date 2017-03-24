@@ -7,4 +7,4 @@ branches:
 script:
   - cd docs
   - npm install -g --save firebase-tools
-  - firebase deploy --token "${1/uoZsdlLIcLPHl-FQSnvjyBgh0DEFPeL2Q3o4fXtLPEjdNDhbCL9n93f7Z0Ww9TMM}"
+  - firebase deploy --token "${1/uoZsdlLIcLPHl-FQSnvjyBgh0DEFPeL2Q3o4fXtLPEjdNDhbCL9n93f7Z0Ww9TMM}" --project "winsonluk-75a4f"
