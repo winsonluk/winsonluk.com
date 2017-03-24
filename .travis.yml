@@ -6,7 +6,12 @@ branches:
     - master
 before_deploy:
   - cd docs
-  - npm install -g firebase-tools
+  - cd functions
+  - rm -rf node_modules
+  - npm cache clear
+  - npm install -g
+  - npm install -g --save firebase-tools
+  - cd ..
 
 deploy:
   provider: firebase
