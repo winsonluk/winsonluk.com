@@ -9,6 +9,7 @@ before_deploy:
   - cd functions
   - rm -rf node_modules
   - npm cache clear
+  - npm set registry https://registry.npmjs.org/
   - npm install
   - npm install -g --save firebase-tools
   - cd ..
