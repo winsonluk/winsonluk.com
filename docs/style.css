@@ -184,7 +184,6 @@ header nav ul li a{
     position: relative;
 }
 .splash .container{
-    background-image: url("images/signature.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -193,6 +192,16 @@ header nav ul li a{
     z-index: 5;
     padding: 20px;
 }
+
+.splash .container h1.show{
+    visibility: visible;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    font-size: 32px;
+    position: relative;
+}
+
 .splash2{
     background-image: url("images/plaid.png");
     background-size: auto 100%;
@@ -412,6 +421,9 @@ footer .social a:hover{
         height: auto;
         padding: 150px 10px 80px 10px;
         text-align: center;
+    }
+    .splash .container h1.show{
+        visibility: hidden;
     }
     .splash2 .container2{
         position: relative;
