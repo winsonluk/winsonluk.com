@@ -72,7 +72,7 @@ img{
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 0 50px 0;
+    padding: 30px 0 0 0;
 }
 
 .blog #toc{
@@ -83,6 +83,11 @@ img{
 .blog #post h2{
     border-left: 5px solid #000;
     padding: 20px;
+}
+
+.caption {
+    font-size: 10px;   
+    text-align: center;
 }
 
 .container{
