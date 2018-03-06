@@ -67,7 +67,7 @@ img{
 }
 
 .blog img{
-    width: 100%;
+    width: 60%;
     display: block;
     height: auto;
     margin-left: auto;
@@ -86,7 +86,8 @@ img{
 }
 
 .caption {
-    font-size: 10px;   
+    font-size: 14px;   
+    font-style: italic;
     text-align: center;
 }
 
@@ -405,6 +406,18 @@ footer .social{
 }
 footer .social a:hover{
     color: #fff;
+}
+
+@media (max-width: 1400px){
+    .blog img{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1200px){
+    .blog img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 800px){
