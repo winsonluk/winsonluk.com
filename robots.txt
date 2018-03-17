@@ -1,3 +1,4 @@
 User-agent: *
 Disallow: /resume.pdf
 Disallow: /blog/
+Disallow: /blog
