@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+
+        <title>Privacy</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-91445012-1', 'auto');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+        </script>
+    </head>
+
+    <body>
+      <section class="blog">
+        <header>
+            <div class="container">
+                <h1 class="logo"><a href="https://winsonluk.com">Winson Luk</a></h1>
+                <nav>
+                    <div class="float_center">
+                    <ul class="child">
+                        <li><a href="https://winsonluk.com">About</a></li>
+                        <li><a href="https://winsonluk.com#projects">Projects</a></li>
+                        <li><a href="https://winsonluk.com#contact">Contact</a></li>
+                        <li><a href="https://winsonluk.com/blog" style="color:#fff;">Blog</a></li>
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section id="post">
+            <h1>A Rawlsian defense of informational contextual integrity as a condition for democracy</h1>
+            <h3>coming soon :P</h3>
+            </br>
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis massa eget est tincidunt finibus. Maecenas molestie quam non velit condimentum tincidunt. In posuere in arcu non hendrerit. Vestibulum diam ex, ornare eu mattis a, dictum ac lorem. Nam scelerisque orci ut sem convallis molestie. Donec in nibh tortor. Nulla in orci quis magna pharetra accumsan quis eget lacus. Vestibulum lacinia posuere pulvinar. Phasellus vehicula magna sem, sed semper metus porttitor quis. Duis sem tellus, dignissim sit amet augue vel, egestas lacinia lectus. Suspendisse potenti. Ut ut hendrerit odio, non auctor est. Maecenas ac enim finibus, ullamcorper augue nec, varius lorem. Etiam vitae ipsum eu nulla venenatis volutpat eu id nulla.</p>
+            <p>Nam ut est quis arcu tincidunt ornare non a nisl. Suspendisse et eros sapien. Aliquam tempus, nunc ut porttitor sollicitudin, purus tellus facilisis erat, quis faucibus turpis sapien vel sem. Ut posuere justo non tincidunt tempus. Vivamus non sodales dui, in commodo odio. Nunc cursus leo pulvinar consectetur dictum. Aenean quis cursus lorem. Cras vitae leo pulvinar, aliquet lorem in, sodales sapien. Sed at risus porttitor, varius massa nec, volutpat purus. Praesent facilisis eros at placerat fringilla. Nunc ultrices ultricies porttitor.</p>
+            </br>
+            <h2>Fusce Vel</h2>
+            <p>Fusce vel faucibus dolor, ut sagittis ante. Mauris quis nunc vitae dui ornare rutrum. Morbi iaculis ligula sit amet iaculis tempus. Vestibulum finibus porta purus, id condimentum lorem sodales ut. Nulla ac nulla in dolor dapibus pellentesque id id ligula. Vestibulum lacinia magna erat, eget tempor orci interdum ut. Nunc sit amet orci lacinia, congue nisi ut, vehicula mi.</p>
+            <p>Fusce at porta eros. Nunc nisl odio, viverra vel condimentum et, varius sit amet lorem. Suspendisse sed arcu turpis. Pellentesque quis lectus enim. Quisque dui est, finibus vel neque id, lacinia scelerisque justo. Duis nec tristique ex. Aliquam aliquam ligula at magna efficitur, quis viverra risus hendrerit. Phasellus mollis faucibus neque. Donec cursus bibendum eros eu congue. Aliquam eget congue dui. Nullam maximus lorem ut pretium vulputate. Curabitur auctor sem id ultricies dignissim.</p>
+            <p>Donec egestas dolor vitae erat pharetra, non congue risus fringilla. Nunc vitae placerat justo. Phasellus massa purus, faucibus non tortor ac, porttitor facilisis est. Suspendisse iaculis egestas consectetur. Duis laoreet sollicitudin purus, vel mollis mi laoreet maximus. Maecenas ut nunc vel nibh elementum ultricies. Phasellus volutpat elit ac dui egestas, et posuere sem dictum. Phasellus quis euismod lacus. Nulla nunc velit, rutrum vitae orci ut, finibus iaculis tellus. Pellentesque porta, lacus eget pretium cursus, tortor lectus suscipit ex, consequat imperdiet nisl ligula vitae erat. Nunc non tristique lorem. Vivamus venenatis quis dolor tempus aliquet. Nulla orci massa, volutpat vitae turpis quis, lobortis faucibus nisl.</p>
+      </section>
+    </section>
+
+        <footer>
+            <div class="container">
+                <div class="copyright">
+                    <p>Created by <a href="http://github.com/winsonluk/winsonluk.com" target="_blank">Winson Luk</a> © 2018</p>
+                </div>
+                <div class="social">
+                    <a href="https://winsonluk.com/privacy" target="_blank">Privacy</a>&nbsp | &nbsp<a href="https://winsonluk.com/terms" target="_blank">Terms</a>&nbsp | &nbsp<a href="https://winsonluk.com/contact">Contact</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../../jquery-1.11.3.min.js"></script>
+        <script src="../../script.js"></script>
+
+    </body>
+</html>
