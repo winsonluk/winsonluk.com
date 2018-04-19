@@ -4,12 +4,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
 
-        <title>Privacy</title>
+        <title>Access Control</title>
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Merriweather:300,700' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
         <link href="../style.css" rel="stylesheet">
+
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=sunburst"></script>
+        <style>
+        li.L0, li.L1, li.L2, li.L3,
+        li.L5, li.L6, li.L7, li.L8 {
+        list-style-type: decimal !important;
+        }
+        </style>
 
 				<!-- Global site tag (gtag.js) - Google Analytics -->
 				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110783249-1"></script>
@@ -42,16 +50,77 @@
         </header>
 
         <section id="post">
-            <h1>A Rawlsian justification for contextual integrity in democracies</h1>
-            <h3>coming soon :P</h3>
+            <h1>Why are private members accessible by different objects of the same class in Java, C++, and C#?</h1>
+            <h3>The answer lies in the fact that these compiled languages establish their access control compile time, not run time.</h3>
             </br>
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis massa eget est tincidunt finibus. Maecenas molestie quam non velit condimentum tincidunt. In posuere in arcu non hendrerit. Vestibulum diam ex, ornare eu mattis a, dictum ac lorem. Nam scelerisque orci ut sem convallis molestie. Donec in nibh tortor. Nulla in orci quis magna pharetra accumsan quis eget lacus. Vestibulum lacinia posuere pulvinar. Phasellus vehicula magna sem, sed semper metus porttitor quis. Duis sem tellus, dignissim sit amet augue vel, egestas lacinia lectus. Suspendisse potenti. Ut ut hendrerit odio, non auctor est. Maecenas ac enim finibus, ullamcorper augue nec, varius lorem. Etiam vitae ipsum eu nulla venenatis volutpat eu id nulla.</p>
+            <h2>An Example in C++</h2>
+            <p>Yesterday I was implementing a self-balancing binary search tree with an iterator for an advanced data structures course. The basic design is as follows.
+            <ul>
+              <li>The <i>BST</i> class builds a binary search tree with <i>BSTNode</i>s, which hold an arbitrary data type, and <i>BSTIterator</i>s that each point to a <i>BSTNode</i>.
+              <li><i>BSTIterator</i> has an overloaded equality test (<i>==</i>) operator that returns true if two <i>BSTIterator</i>'s private <i>BSTNode</i> pointers are equal.
+              <li>Adhering to object-oriented principles such as encapsulation, <i>BSTIterator</i>'s pointer to <i>BSTNode</i> is private, and no getter methods or overriden dereference operators exist to retrieve <i>BSTNode</i> (as required by my course's assignment instructions).
+            </ul>
+            <h3>BSTIterator.hpp</h3>
+<pre class="prettyprint linenums">
+#include "BSTNode.hpp"
+#include &lt;list>
+#include &lt;iterator>
+
+template&lt;typename Data>
+class BSTIterator : public std::iterator&lt;std::input_iterator_tag, Data> {
+
+private:
+  BSTNode&lt;Data>* curr;
+
+public:
+  BSTIterator(BSTNode&lt;Data>* curr); // Constructor
+  BSTIterator&lt;Data>& operator++(); // Increment operator
+  bool operator==(BSTIterator&lt;Data> const & other) const; // Equality test operator
+};</pre>
             <p>Nam ut est quis arcu tincidunt ornare non a nisl. Suspendisse et eros sapien. Aliquam tempus, nunc ut porttitor sollicitudin, purus tellus facilisis erat, quis faucibus turpis sapien vel sem. Ut posuere justo non tincidunt tempus. Vivamus non sodales dui, in commodo odio. Nunc cursus leo pulvinar consectetur dictum. Aenean quis cursus lorem. Cras vitae leo pulvinar, aliquet lorem in, sodales sapien. Sed at risus porttitor, varius massa nec, volutpat purus. Praesent facilisis eros at placerat fringilla. Nunc ultrices ultricies porttitor.</p>
             </br>
-            <h2>Fusce Vel</h2>
+            <h2>Explanation</h2>
+            <h3>The Theoretical Explanation</h3>
+            <p>"Private" protects the class from the "outer world" (i.e. future programmers that may misuse the class), but modification within the same class is within the same "world."</p>
+            <h3>The Practical Explanation</h3>
+            <p>Per-object access control at compile time is both expensive (pointer checks for each object) and against compile-time/runtime check practices.</p>
+            <h2>Debatable Uses</h2>
+            <h3>Equality Operators</h3>
+            <h3>Copy Constructors</h3>
+            <h2>Interpreted Languages</h2>
             <p>Fusce vel faucibus dolor, ut sagittis ante. Mauris quis nunc vitae dui ornare rutrum. Morbi iaculis ligula sit amet iaculis tempus. Vestibulum finibus porta purus, id condimentum lorem sodales ut. Nulla ac nulla in dolor dapibus pellentesque id id ligula. Vestibulum lacinia magna erat, eget tempor orci interdum ut. Nunc sit amet orci lacinia, congue nisi ut, vehicula mi.</p>
+<h3>Ruby</h3>
+<pre class="prettyprint linenums">
+class AccessPrivate
+  def a
+  end
+  private :a # a is private method
+      
+  def accessing_private
+    a              # sure! 
+    self.a         # nope! private methods cannot be called with an explicit receiver at all, even if that receiver is "self"
+    other_object.a # nope, a is private, you can't get it (but if it was protected, you could!)
+  end
+end
+</pre>
             <p>Fusce at porta eros. Nunc nisl odio, viverra vel condimentum et, varius sit amet lorem. Suspendisse sed arcu turpis. Pellentesque quis lectus enim. Quisque dui est, finibus vel neque id, lacinia scelerisque justo. Duis nec tristique ex. Aliquam aliquam ligula at magna efficitur, quis viverra risus hendrerit. Phasellus mollis faucibus neque. Donec cursus bibendum eros eu congue. Aliquam eget congue dui. Nullam maximus lorem ut pretium vulputate. Curabitur auctor sem id ultricies dignissim.</p>
+<h3>JavaScript</h3>
+<pre class="prettyprint linenums">
+function Tune(song,artist) {
+  var title = song;
+  this.concat = function() {
+   return title + " " + artist;
+  }
+}
+
+var happySongs = [];
+happySongs[0] = new Tune("Putting on the Ritz", "Ella Fitzgerald");
+
+console.log(happySongs[0].title); // undefined
+
+ // prints out correct title and artist
+console.log(happySongs[0].concat());
+</pre>
             <p>Donec egestas dolor vitae erat pharetra, non congue risus fringilla. Nunc vitae placerat justo. Phasellus massa purus, faucibus non tortor ac, porttitor facilisis est. Suspendisse iaculis egestas consectetur. Duis laoreet sollicitudin purus, vel mollis mi laoreet maximus. Maecenas ut nunc vel nibh elementum ultricies. Phasellus volutpat elit ac dui egestas, et posuere sem dictum. Phasellus quis euismod lacus. Nulla nunc velit, rutrum vitae orci ut, finibus iaculis tellus. Pellentesque porta, lacus eget pretium cursus, tortor lectus suscipit ex, consequat imperdiet nisl ligula vitae erat. Nunc non tristique lorem. Vivamus venenatis quis dolor tempus aliquet. Nulla orci massa, volutpat vitae turpis quis, lobortis faucibus nisl.</p>
       </section>
     </section>
