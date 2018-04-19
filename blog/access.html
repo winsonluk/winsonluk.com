@@ -50,8 +50,8 @@
         </header>
 
         <section id="post">
-            <h1>Why are private members accessible by different objects of the same class in Java, C++, and C#?</h1>
-            <h3>The answer lies in the fact that these compiled languages establish their access control compile time, not run time.</h3>
+            <h1>Why are private members accessible by different objects of the same class in Java and C++?</h1>
+            <h3>The answer lies in the essence of object-oriented programming and compiled languages.</h3>
             </br>
             <h2>An Example in C++</h2>
             <p>Yesterday I was implementing a self-balancing binary search tree with an iterator for an advanced data structures course. The basic design is as follows.
@@ -84,7 +84,7 @@ public:
             <p>"Private" protects the class from the "outer world" (i.e. future programmers that may misuse the class), but modification within the same class is within the same "world."</p>
             <h3>The Practical Explanation</h3>
             <p>Per-object access control at compile time is both expensive (pointer checks for each object) and against compile-time/runtime check practices.</p>
-            <h2>Debatable Uses</h2>
+            <h2>Bug or Feature?</h2>
             <h3>Equality Operators</h3>
             <h3>Copy Constructors</h3>
             <h2>Interpreted Languages</h2>
@@ -122,6 +122,8 @@ console.log(happySongs[0].title); // undefined
 console.log(happySongs[0].concat());
 </pre>
             <p>Donec egestas dolor vitae erat pharetra, non congue risus fringilla. Nunc vitae placerat justo. Phasellus massa purus, faucibus non tortor ac, porttitor facilisis est. Suspendisse iaculis egestas consectetur. Duis laoreet sollicitudin purus, vel mollis mi laoreet maximus. Maecenas ut nunc vel nibh elementum ultricies. Phasellus volutpat elit ac dui egestas, et posuere sem dictum. Phasellus quis euismod lacus. Nulla nunc velit, rutrum vitae orci ut, finibus iaculis tellus. Pellentesque porta, lacus eget pretium cursus, tortor lectus suscipit ex, consequat imperdiet nisl ligula vitae erat. Nunc non tristique lorem. Vivamus venenatis quis dolor tempus aliquet. Nulla orci massa, volutpat vitae turpis quis, lobortis faucibus nisl.</p>
+            </br>
+            <h2>Sources</h2>
       </section>
     </section>
 
