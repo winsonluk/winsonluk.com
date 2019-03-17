@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /resume.pdf
+Disallow: /inferior.shit
 Disallow: /blog/
 Disallow: /blog
