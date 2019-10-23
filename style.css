@@ -41,10 +41,21 @@ a{
     color: #999;
     text-decoration: none;
     outline: 0;
+    background-color: #fff;
+    border-color: white;
+    border-style: solid;
 }
 
 img{
     max-width: 100%;
+}
+
+hr{
+    border: none;
+    border-top: 3px dotted;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
 
 ::selection {
