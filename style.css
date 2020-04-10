@@ -37,6 +37,10 @@ h3{
     font-weight: 600;
 }
 
+#outer > #imgur-embed-iframe-pub-a-zKjFH30 {
+    width: 100% !important;
+}
+
 a{
     color: #999;
     text-decoration: none;
